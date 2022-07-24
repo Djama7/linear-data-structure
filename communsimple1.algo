@@ -1,0 +1,17 @@
+ALGORITHM commun simple
+VAR
+    A,B : ARRAY OF INTEGER [];
+    sum : INTEGER := 0;
+BEGIN
+    A:=[3,1,7,9];
+    B:=[2,4,1,9,3];
+    FOR i FROM 1 TO A.length STEP 1 DO 
+
+       FOR j FROM 1 TO B.length STEP 1 DO
+       IF (A[i] = B[j]) THEN 
+       sum := sum + A[i]*2 ;
+       END_IF
+    END_FOR 
+
+     Write( sum ) ;  
+END
